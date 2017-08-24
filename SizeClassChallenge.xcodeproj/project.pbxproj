@@ -12,6 +12,8 @@
 		7545BE391F4F65BD00AE3FA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7545BE371F4F65BD00AE3FA6 /* Main.storyboard */; };
 		7545BE3B1F4F65BD00AE3FA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7545BE3A1F4F65BD00AE3FA6 /* Assets.xcassets */; };
 		7545BE3E1F4F65BD00AE3FA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7545BE3C1F4F65BD00AE3FA6 /* LaunchScreen.storyboard */; };
+		7545BE471F4F687100AE3FA6 /* SecondStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7545BE451F4F687100AE3FA6 /* SecondStoryboard.storyboard */; };
+		7545BE491F4F68A100AE3FA6 /* ThirdStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7545BE481F4F68A100AE3FA6 /* ThirdStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		7545BE3A1F4F65BD00AE3FA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7545BE3D1F4F65BD00AE3FA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7545BE3F1F4F65BD00AE3FA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7545BE461F4F687100AE3FA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SecondStoryboard.storyboard; sourceTree = "<group>"; };
+		7545BE481F4F68A100AE3FA6 /* ThirdStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ThirdStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				7545BE3A1F4F65BD00AE3FA6 /* Assets.xcassets */,
 				7545BE3C1F4F65BD00AE3FA6 /* LaunchScreen.storyboard */,
 				7545BE3F1F4F65BD00AE3FA6 /* Info.plist */,
+				7545BE451F4F687100AE3FA6 /* SecondStoryboard.storyboard */,
+				7545BE481F4F68A100AE3FA6 /* ThirdStoryboard.storyboard */,
 			);
 			path = SizeClassChallenge;
 			sourceTree = "<group>";
@@ -126,7 +132,9 @@
 			files = (
 				7545BE3E1F4F65BD00AE3FA6 /* LaunchScreen.storyboard in Resources */,
 				7545BE3B1F4F65BD00AE3FA6 /* Assets.xcassets in Resources */,
+				7545BE491F4F68A100AE3FA6 /* ThirdStoryboard.storyboard in Resources */,
 				7545BE391F4F65BD00AE3FA6 /* Main.storyboard in Resources */,
+				7545BE471F4F687100AE3FA6 /* SecondStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +167,14 @@
 				7545BE3D1F4F65BD00AE3FA6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		7545BE451F4F687100AE3FA6 /* SecondStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7545BE461F4F687100AE3FA6 /* Base */,
+			);
+			name = SecondStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
