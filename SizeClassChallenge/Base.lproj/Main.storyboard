@@ -29,6 +29,9 @@
                                 <state key="normal" title="Click">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="9RF-3t-p3Z" kind="show" id="cuW-gR-mHj"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Go to Last View Man" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xt9-zM-hMa">
                                 <rect key="frame" x="87.5" y="170" width="200" height="21"/>
@@ -55,10 +58,26 @@
                             <constraint firstItem="Xt9-zM-hMa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lcf-cD-5FP"/>
                             <constraint firstItem="aqg-u0-fy7" firstAttribute="top" secondItem="Xt9-zM-hMa" secondAttribute="bottom" constant="70" id="s3u-P8-URk"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="s3u-P8-URk"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="myLabel" destination="Xt9-zM-hMa" id="LED-Cr-4xt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--SecondStoryboard-->
+        <scene sceneID="CrA-R5-4Oj">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SecondStoryboard" id="9RF-3t-p3Z" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a78-1l-p72" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="763" y="-289"/>
         </scene>
     </scenes>
 </document>

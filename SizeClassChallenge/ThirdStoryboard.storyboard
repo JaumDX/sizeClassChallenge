@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BZw-OX-LzK">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Thrid View Controller-->
         <scene sceneID="aem-5Z-CBE">
             <objects>
-                <viewController id="BZw-OX-LzK" sceneMemberID="viewController">
+                <viewController id="BZw-OX-LzK" customClass="ThridViewController" customModule="SizeClassChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Guz-vq-8t8"/>
                         <viewControllerLayoutGuide type="bottom" id="MGE-Bb-hhq"/>
@@ -21,23 +21,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nfr-67-Yoi">
-                                <rect key="frame" x="164" y="344" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nfr-67-Yoi">
+                                <rect key="frame" x="164.5" y="261" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="VPC-i1-AdY"/>
+                                </constraints>
+                                <state key="normal" title="Click"/>
+                                <connections>
+                                    <segue destination="4yC-ig-S7F" kind="unwind" unwindAction="exitWithSegue:" id="3Ln-ab-mKF"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igh-Rz-vmr">
-                                <rect key="frame" x="166" y="193" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teste" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igh-Rz-vmr">
+                                <rect key="frame" x="87.5" y="170" width="200" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="2t0-qU-fdU"/>
+                                    <constraint firstAttribute="height" constant="21" id="Z5r-26-Qlz"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="1" green="0.39544236659999998" blue="0.35923108459999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <color key="backgroundColor" red="1" green="0.39544236659999998" blue="0.35923108459999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Nfr-67-Yoi" firstAttribute="top" secondItem="Igh-Rz-vmr" secondAttribute="bottom" constant="70" id="0Xc-Bp-AIc"/>
+                            <constraint firstItem="Nfr-67-Yoi" firstAttribute="centerX" secondItem="QvA-CR-CmK" secondAttribute="centerX" id="6ok-lS-08C"/>
+                            <constraint firstItem="Igh-Rz-vmr" firstAttribute="top" secondItem="Guz-vq-8t8" secondAttribute="bottom" constant="150" id="GpU-c5-loL">
+                                <variation key="heightClass=compact-widthClass=compact" constant="50"/>
+                            </constraint>
+                            <constraint firstItem="Igh-Rz-vmr" firstAttribute="centerX" secondItem="QvA-CR-CmK" secondAttribute="centerX" id="Ivq-hQ-L0k"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gFa-Cu-AK4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="4yC-ig-S7F" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-106" y="63"/>
         </scene>
