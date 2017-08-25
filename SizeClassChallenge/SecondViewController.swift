@@ -10,15 +10,29 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    @IBOutlet weak var myLabel: UILabel!
+    var str = String()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        myLabel.text = str
         // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToThirdView"{
+            
+            if let thirdVC = segue.destination as? ThridViewController{
+                thirdVC.str = myLabel.text!
+            }
+            
+        }
+        
     }
     
 

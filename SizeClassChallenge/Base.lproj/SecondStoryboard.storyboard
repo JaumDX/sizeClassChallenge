@@ -28,7 +28,7 @@
                                 </constraints>
                                 <state key="normal" title="Click"/>
                                 <connections>
-                                    <segue destination="eiT-6C-Bh7" kind="show" id="z0J-RE-ysS"/>
+                                    <segue destination="eiT-6C-Bh7" kind="show" identifier="goToThirdView" customClass="MyFuckinSegue" customModule="SizeClassChallenge" customModuleProvider="target" id="z0J-RE-ysS"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LnP-Ti-Mjf">
@@ -46,7 +46,7 @@
                                 </variation>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.50196078430000002" green="0.57647058819999997" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="LnP-Ti-Mjf" firstAttribute="centerX" secondItem="jgg-GR-D8N" secondAttribute="centerX" id="KO2-Og-1sF"/>
                             <constraint firstItem="q9M-MA-u5h" firstAttribute="top" secondItem="LnP-Ti-Mjf" secondAttribute="bottom" constant="70" id="McM-8V-Q0L"/>
@@ -56,6 +56,9 @@
                             <constraint firstItem="q9M-MA-u5h" firstAttribute="centerX" secondItem="jgg-GR-D8N" secondAttribute="centerX" id="z4c-Iv-oF7"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="myLabel" destination="LnP-Ti-Mjf" id="o24-fC-fvM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NtW-lC-PCH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -26,12 +26,12 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="VPC-i1-AdY"/>
                                 </constraints>
-                                <state key="normal" title="Click"/>
+                                <state key="normal" title="End"/>
                                 <connections>
-                                    <segue destination="4yC-ig-S7F" kind="unwind" unwindAction="exitWithSegue:" id="3Ln-ab-mKF"/>
+                                    <segue destination="4yC-ig-S7F" kind="unwind" unwindAction="exitToMainWithSegue:" id="yTX-0l-NlR"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teste" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igh-Rz-vmr">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igh-Rz-vmr">
                                 <rect key="frame" x="87.5" y="170" width="200" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="2t0-qU-fdU"/>
@@ -56,6 +56,9 @@
                             <constraint firstItem="Igh-Rz-vmr" firstAttribute="centerX" secondItem="QvA-CR-CmK" secondAttribute="centerX" id="Ivq-hQ-L0k"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="myLabel" destination="Igh-Rz-vmr" id="NPu-yl-zPE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gFa-Cu-AK4" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="4yC-ig-S7F" userLabel="Exit" sceneMemberID="exit"/>
