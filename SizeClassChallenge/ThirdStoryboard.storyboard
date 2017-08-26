@@ -31,8 +31,9 @@
                                     <segue destination="4yC-ig-S7F" kind="unwind" unwindAction="exitToMainWithSegue:" id="yTX-0l-NlR"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igh-Rz-vmr">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igh-Rz-vmr" customClass="MyFuckinLabel" customModule="SizeClassChallenge" customModuleProvider="target">
                                 <rect key="frame" x="87.5" y="170" width="200" height="21"/>
+                                <color key="backgroundColor" red="0.047058823530000002" green="0.38823529410000002" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="2t0-qU-fdU"/>
                                     <constraint firstAttribute="height" constant="21" id="Z5r-26-Qlz"/>

@@ -17,6 +17,7 @@
 		7545BE4B1F4F70D300AE3FA6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7545BE4A1F4F70D300AE3FA6 /* SecondViewController.swift */; };
 		7545BE4D1F4F70E700AE3FA6 /* ThridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7545BE4C1F4F70E700AE3FA6 /* ThridViewController.swift */; };
 		75961D8D1F4FB26D00F9FD49 /* MyFuckinSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75961D8C1F4FB26D00F9FD49 /* MyFuckinSegue.swift */; };
+		75961D911F4FBECA00F9FD49 /* MyFuckinLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75961D901F4FBECA00F9FD49 /* MyFuckinLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		7545BE4A1F4F70D300AE3FA6 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		7545BE4C1F4F70E700AE3FA6 /* ThridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThridViewController.swift; sourceTree = "<group>"; };
 		75961D8C1F4FB26D00F9FD49 /* MyFuckinSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyFuckinSegue.swift; sourceTree = "<group>"; };
+		75961D901F4FBECA00F9FD49 /* MyFuckinLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyFuckinLabel.swift; path = ../MyFuckinLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				7545BE3C1F4F65BD00AE3FA6 /* LaunchScreen.storyboard */,
 				7545BE3F1F4F65BD00AE3FA6 /* Info.plist */,
 				75961D8C1F4FB26D00F9FD49 /* MyFuckinSegue.swift */,
+				75961D901F4FBECA00F9FD49 /* MyFuckinLabel.swift */,
 			);
 			path = SizeClassChallenge;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75961D911F4FBECA00F9FD49 /* MyFuckinLabel.swift in Sources */,
 				75961D8D1F4FB26D00F9FD49 /* MyFuckinSegue.swift in Sources */,
 				7545BE4B1F4F70D300AE3FA6 /* SecondViewController.swift in Sources */,
 				7545BE361F4F65BD00AE3FA6 /* ViewController.swift in Sources */,

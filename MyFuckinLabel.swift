@@ -8,7 +8,29 @@
 
 import UIKit
 
-class MyFuckinLabel: UILabel {
+
+@IBDesignable class MyFuckinLabel: UILabel {
+
+    //Defines the corner radius
+    @IBInspectable public var cornerRadius : CGFloat{
+        get{
+            return layer.cornerRadius
+            
+        }set{
+            
+            self.layer.cornerRadius = newValue
+            self.layer.masksToBounds = newValue > 0
+        }
+    }
+    
+    //Defines the border width
+    @IBInspectable
+    public var borderWidth : CGFloat = 0{
+        didSet{
+            self.layer.borderWidth = self.borderWidth
+        }
+    }
+    
 
     /*
     // Only override draw() if you perform custom drawing.
